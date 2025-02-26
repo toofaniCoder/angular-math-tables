@@ -1,6 +1,7 @@
 # Angular Math Tables
 
-[text](README.md)
+![alt text](screencapture-localhost-63021-2025-02-26-16_19_36.png)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
 
 ## Development server
