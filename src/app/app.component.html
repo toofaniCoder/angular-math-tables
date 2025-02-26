@@ -1,23 +1,10 @@
 <div class="max-w-screen min-h-screen bg-yellow-50 py-10">
   <div class="container mx-auto">
-    <div class="grid grid-cols-5">
-      <div class="card bg-base-100 shadow-xl">
-        <div class="card-body">
-          <h2 class="card-title">Table of 1</h2>
-          <div class="text-xl space-y-2">
-            <p>1 x 1 = 1</p>
-            <p>1 x 2 = 2</p>
-            <p>1 x 3 = 3</p>
-            <p>1 x 4 = 4</p>
-            <p>1 x 5 = 5</p>
-            <p>1 x 6 = 6</p>
-            <p>1 x 7 = 7</p>
-            <p>1 x 8 = 8</p>
-            <p>1 x 9 = 9</p>
-            <p>1 x 10 = 10</p>
-          </div>
-        </div>
-      </div>
+    <div class="grid grid-cols-5 gap-5">
+      @for (num of tables; track $index) {
+      <app-table [num]="num" />
+      }
+      <app-table />
     </div>
     <!-- <div class="flex space-x-5">
       <button class="btn btn-neutral">Neutral</button>
